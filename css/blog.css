@@ -1,0 +1,16 @@
+.blog-list{
+  padding:4%;
+}
+
+.blog-section{
+  border-bottom: 1px solid lightgray;
+}
+
+.blog-section:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#banner{
+  margin-top:-30%;
+}
