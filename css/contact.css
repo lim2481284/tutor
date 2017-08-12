@@ -1,3 +1,38 @@
 #banner{
   margin-top:-30%;
 }
+
+#container_1{
+  background-color :#e9eaed;
+}
+
+h2{
+  text-align: center
+}
+
+.row-margin-2{
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.row-margin-5{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+
+#contact_title{
+  color:black;
+  font-weight: bold;
+}
+
+
+.contact_p > p{
+  color:#6c7279;
+  text-align: center;
+}
+
+.contact_icon > img{
+  display:block;
+  margin:auto;
+
+}

@@ -1,13 +1,32 @@
-/* ------------------------------------------------------------------------------
-	Template Name: Flosix
-	Author: Designstub
-	Author URI: http://www.designstub.com
+
+input{
+
+	border:none;
+	border-bottom: 1px solid lightgray;
+	width:90%;
+	padding-bottom: 2%;
+	font-size:130%;
+	font-weight: lighter;
+	outline: none;
+}
 
 
+button{
+	border:none;
+	background-color: #464646;
+	color:white;
+	font-size:160%;
+	padding:2% 5% 2% 5%;
+	border-radius:5px;
+}
+button:hover{
+	opacity: 0.7;
+}
 
 /* ------------------------------------------------------------------------------
 	Typography
 -------------------------------------------------------------------------------*/
+
 .navigation button {
 	font-size: 13px;
 	font-weight: 400;
@@ -379,7 +398,7 @@ ul li {
 }
 .intro h1 {
 	color: #000;
-	font: 27px "Source Sans Pro";
+	font: 27px "Trebuchet MS";
 }
 .intro p {
 	color: #6c7279;
@@ -547,7 +566,7 @@ ul li {
 }
 .testimonials h1 {
 	color: #fff;
-	font: 23px "Source Sans Pro";
+	font: 23px "Trebuchet MS";
 	font-weight: 300;
 }
 .testimonials p {
