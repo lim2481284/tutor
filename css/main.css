@@ -1,3 +1,10 @@
+#filter{
+	position:absolute;
+	top:0;
+	max-height:250px;
+	opacity:0.8;
+}
+
 
 .row-margin-2{
   margin-top:2%;
@@ -231,6 +238,7 @@ ul li {
 }
 .navigation li {
 	display: inline-block;
+		  text-shadow: 1px 1px gray;
 }
 .navigation a {
 	color: rgba(255, 255, 255, 0.75);
@@ -408,7 +416,8 @@ ul li {
 	text-transform: uppercase;
 }
 .banner-text p {
-	color: #8d8d8d;
+	color: white;
+	  text-shadow: 1px 1px gray;
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 3px;
@@ -641,7 +650,7 @@ ul li {
 	padding: 20px 0;
 }
 .footer .footer-col {
-	margin-bottom: 80px;
+	
 }
 .footer h5 {
 	color: #fff;

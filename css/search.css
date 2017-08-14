@@ -1,0 +1,21 @@
+.search-box{
+	height:400px;
+	border-left:1px solid gray;
+	text-align:center;
+	vertical-align: middle;
+	line-height:400px;
+	vertical-align: middle;
+	
+}
+
+
+.search-box h1{
+	line-height:400px;
+	vertical-align: middle;
+	
+}
+
+
+a:hover{
+	opacity:0.5;
+}
