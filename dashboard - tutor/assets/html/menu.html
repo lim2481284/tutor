@@ -53,7 +53,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Admin</h5>
+              	  <h5 class="centered">Chew Jing Yao</h5>
               	  	
                   <li class="mt">
                       <a class="active" href="index.html">
@@ -71,6 +71,15 @@
       
                   </li>
 
+				  
+				   <li class="sub-menu">
+                      <a href="index.html" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Blog Management</span>
+                      </a>
+      
+                  </li>
+				  
 				   <li class="sub-menu">
                       <a href="index.html" >
                           <i class="fa fa-desktop"></i>
@@ -85,18 +94,6 @@
                           <span>Notification Management</span>
                       </a>
       
-                  </li>
-				  
-				  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
-                          <span>Website Management</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="calendar.html">About </a></li>
-                          <li><a  href="gallery.html">Blog </a></li>
-                          <li><a  href="todo_list.html">Contact </a></li>
-                      </ul>
                   </li>
               </ul>
               <!-- sidebar menu end-->
@@ -159,7 +156,7 @@
                       	<div class="col-md-4 col-sm-4 mb">
                       		<div class="white-panel pn donut-chart">
                       			<div class="white-header">
-						  			<h5>REVENUE</h5>
+						  			<h5>SERVER LOAD</h5>
                       			</div>
 								<div class="row">
 									<div class="col-sm-6 col-xs-6 goleft">
@@ -187,7 +184,7 @@
                       	<div class="col-md-4 col-sm-4 mb">
                       		<div class="white-panel pn">
                       			<div class="white-header">
-						  			<h5>TOP TUTOR</h5>
+						  			<h5>TOP PRODUCT</h5>
                       			</div>
 								<div class="row">
 									<div class="col-sm-6 col-xs-6 goleft">
@@ -205,7 +202,7 @@
 							<!-- WHITE PANEL - TOP USER -->
 							<div class="white-panel pn">
 								<div class="white-header">
-									<h5>TOP STUDENT</h5>
+									<h5>TOP USER</h5>
 								</div>
 								<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
 								<p><b>Zac Snider</b></p>
@@ -426,10 +423,30 @@
     <!--script for this page-->
     <script src="assets/js/sparkline-chart.js"></script>    
 	<script src="assets/js/zabuto_calendar.js"></script>	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/load.js"></script>
 	
+	
+	<!-- notification message content -->
+	<script type="text/javascript">
+        $(document).ready(function () {
+        var unique_id = $.gritter.add({
+            // (string | mandatory) the heading of the notification
+            title: 'Notification !',
+            // (string | mandatory) the text inside the notification
+            text: 'You have 3 student buy your contact number !',
+            // (string | optional) the image to display on the left
+            image: 'assets/img/notification.png',
+            // (bool | optional) if you want it to fade out on its own or just sit there
+            sticky: true,
+            // (int | optional) the time you want it to be alive for before fading out
+            time: '',
+            // (string | optional) the class name you want to apply to that specific message
+            class_name: 'my-sticky-class'
+        });
 
+        return false;
+        });
+	</script>
+	
 	<script type="application/javascript">
         $(document).ready(function () {
             $("#date-popover").popover({html: true, trigger: "manual"});
