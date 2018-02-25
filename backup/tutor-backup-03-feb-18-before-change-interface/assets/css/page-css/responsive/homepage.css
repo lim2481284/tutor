@@ -1,0 +1,20 @@
+
+/* 
+	Image slider styling 
+*/
+
+.carousel{
+	height:80vh;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+	height:80vh;
+	width:auto;
+	object-fit: cover;
+}
+
+.active{
+	height:80vh;
+}
+.slider-title{
+	font-size:150%;
+}

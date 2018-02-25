@@ -1,0 +1,36 @@
+
+.nav-tabs>li{
+	width:25%;
+	max-width:25%;
+	font-size:100%;
+	text-align:center;
+	
+}
+.nav>li>a{
+	display:block;
+	padding: 10px 0px
+}
+
+
+.profileContentSection{
+	border-top:1px solid gray;
+	padding-top:15%;
+	
+}
+
+.tab-content{
+	width:100%;
+	display:inline-block;
+	height:auto;
+}
+
+.tab-content:after{
+	overflow: auto;
+    content: "";
+    display:inline-block;
+	height:auto;
+}
+
+.active{
+	height:auto;
+}

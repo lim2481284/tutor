@@ -1,0 +1,147 @@
+
+
+<!-- top menu bar section -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid menu_bar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class='menu_logo' src="assets/images/logo.png" alt="">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class='logo_name'> My ATutor</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Backup : old version menu
+<div class="header-content clearfix"> <a class="logo" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+	<img  src="assets/images/gradient.png" alt="" class="img-responsive filter" id='gradient'>
+	<nav class="navigation" role="navigation">
+	<ul class="primary-nav">
+	  <li><a href="index.html">Home</a></li>
+	  <li><a class='student-menu student-menu-toggle' href="profile.html">Profile</a></li>
+	  <li><a href="search.html">Search</a></li>
+	  <li><a href="blog.html">Blog</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	  <li><a href="chat.html">Chat</a></li>
+	  <li><button  class='student-menu-toggle tutor-menu-toggle  admin-menu-toggle' id='signin'>login</button></li>
+	  <li><button id='logout' class='student-menu student-menu-toggle'>Logout</button></li>
+	  <li><button class='student-menu-toggle tutor-menu-toggle  admin-menu-toggle' id='signup'>Register</button></li>
+	  <li><a href='db'> <button id='dashboard' class='tutor-menu tutor-menu-toggle'>Dashboard</button></a></li>
+	  <li><a href='db-admin'> <button id='dashboard-admin' class='admin-menu admin-menu-toggle'>Dashboard</button></a></li>
+	</ul>
+	</nav>
+	<a href="#" class="nav-toggle">Menu<span></span></a>
+</div>
+-->
+
+
+<!-- login/register box popup section -->
+<div id="login" class="overlay">
+	<div class="popup">
+
+		<!-- close button -->
+		<a class="close" href="#">&times;</a>
+
+		<!-- bootstrap tab toggle -->
+		<ul class="nav nav-tabs">
+		  <li class="active tab-active"><a data-toggle="tab" href="#login-tab">Login</a></li>
+		  <li><a data-toggle="tab" href="#register-tab">Register</a></li>
+		</ul>
+
+		<!--login tab content -->
+		<div class="tab-content">
+		  <div id="login-tab" class="tab-pane fade in active">
+			<div class="tab-content">
+			  <div class="sign-in">
+				<center>
+					<div class='loginText'> Username</div>
+					<input id="login-username" name="login-username" type='text'/>
+					<div class='loginText'> Password</div>
+					<input id='login-password' type='password' />
+					<div style='width:80%'>
+						<a class='forgotPassword'> Forgot password </a>
+					</div>
+					<button id='login-button' class='formBtn' type='button'> Login </button>
+				</center>
+			  </div>
+			</div>
+		 </div>
+
+		 <!-- register tab content -->
+		  <div id="register-tab" class="tab-pane fade">
+			<div class="sign-in">
+				<center>
+					<div class='loginText'> I'm register for </div>
+
+					<select id='register-role' class='select-input-style'>
+						<option  value="" disabled selected>I'm register for ... </option>
+						<option value="student">Student</option>
+						<option value="student">Parent</option>
+						<option value="tutor">Tutor</option>
+					</select>
+
+					<div class='loginText'> Username</div>
+					<input id='register-username' type='text' />
+					<div class='loginText'> Email address</div>
+					<input id='register-email'  type='text'/>
+					<div class='loginText'> Password</div>
+					<input id='register-password' type='password'/>
+					<div class='loginText'> Confirm password</div>
+					<input id='register-confirmpassword' type='password' />
+					<div class='loginText'> First name</div>
+					<input id='register-firstname' type='text' />
+					<div class='loginText'> Last name</div>
+					<input id='register-lastname' type='text' />
+					<div class='loginText'> Gender</div>
+					<select id='register-gender' class='select-input-style'>
+							<option  value="" disabled selected>Select gender here </option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+					</select>
+					<button id='register-button' class='formBtn' type='button'> Register </button>
+				</center>
+			  </div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Dynamic script section, this script have to put here to handle dynamic element -->
+<script>
+
+	// Mobile nav bar toggle function
+	var sections = $('section')
+		nav = $('nav[role="navigation"]');
+
+	// Logout button handling
+	$('.student-menu').hide();
+	$('.tutor-menu').hide();
+	$('.admin-menu').hide();
+
+	// Role handling
+	if(localStorage.getItem("user")=="student")
+	{
+		$('.student-menu-toggle').toggle();
+	}
+	if(localStorage.getItem("user")=="tutor")
+	{
+		$('.tutor-menu-toggle').toggle();
+	}
+	if(localStorage.getItem("user")=="admin")
+	{
+		$('.admin-menu-toggle').toggle();
+	}
+</script>

@@ -1,0 +1,37 @@
+.graphic_plane{
+  float:right;
+  margin-right: 10%;
+}
+.graphic_plane img{
+  width: 80%;
+  opacity: 0.6;
+}
+
+#container_1{
+  background-color :white;
+  margin-top:10%;
+}
+
+h2{
+  color:#44444;
+  text-align: center
+}
+
+#contact_title{
+  color:#44444;
+  font-weight: bold;
+}
+input{
+	font-size: inherit;
+}
+
+.contact_p > p{
+  color:#6c7279;
+  text-align: center;
+}
+
+.contact_icon > img{
+  display:block;
+  margin:auto;
+
+}

@@ -1,0 +1,221 @@
+a{
+	color:#2d3033;
+}
+
+.search-box{
+	height:400px;
+	border-left:1px solid gray;
+	text-align:center;
+	vertical-align: middle;
+	line-height:400px;
+	vertical-align: middle;	
+}
+.paginationSection{
+	text-align:center;
+}
+
+.search-box h1{
+	line-height:400px;
+	vertical-align: middle;
+	
+}
+
+
+a:hover{
+	opacity:0.5;
+}
+
+
+
+
+/* sEach page */
+.search-result-button{
+    background: #3DBAD9;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;	
+}
+
+.result-profile h4{
+	margin-bottom:4%;
+}
+.result-detail h5{
+	margin-bottom:8%;
+}
+
+.profile-left{
+	width:30%;
+	float:left;
+	font-weight:bold;
+	
+}
+
+.profile-right{
+	width:70%;
+	float:left;
+	padding-right:3%;
+}
+
+
+.search-result{
+	background-color:white;		
+	width:100%;
+	padding-top:4%;		
+}
+
+
+.search-result:hover{
+	cursor:pointer;
+	opacity:0.8;
+}
+
+.search-result>.container{
+		border-bottom:1px solid lightgray;
+		padding-bottom:2%;
+} 
+
+
+
+
+.result-pic{
+	width:10%;
+	float:left;
+}
+.result-pic img{
+	width:100%;
+}
+
+.result-profile{
+	width:60%;
+	padding-left:5%;
+	float:left;
+	border-right:1px solid lightgray;
+}
+.result-detail{
+	width:30%;
+	padding-left:2%;
+	float:left;
+	
+}
+.search-student{
+	display:none;
+}
+.search-tutor{
+	display:none;
+}
+
+.search-button{
+	margin-bottom:5%;
+	margin-left:5%;
+	background:#3DBAD9 !important;
+}
+.search-for{
+	background-color:white;
+	padding-top:5%;
+	padding-bottom:5%;
+	font-size:130%;
+
+	
+}
+.profile-row{
+	padding-left:0px ;
+	padding-bottom:2%;
+}
+
+.subjectRow{
+	padding-left:0px ;
+	padding-bottom:2%;
+}
+.subjectList{
+	border-bottom:1px solid lightgray;
+	padding-bottom:2%;
+	padding-top:2%;
+}
+.subjectList:last-child{
+	border-bottom:none;
+	padding-bottom:2%;
+	padding-top:2%;
+}
+
+.noRecord{	
+	text-align: center;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.search-input {
+	background-color:#e9eaed;
+	text-align: center;
+}
+
+.search-input input{
+	border:none;
+	border-bottom:1px solid gray;
+	border: none;
+    border-bottom: 1px solid gray;
+    width: 30%;
+    margin-left: 3%;
+    padding-bottom: 1%;
+    font-size: inherit;
+    margin-bottom: 5%;
+    font-weight: lighter;
+    outline: none;
+    margin-top: 5%;
+    padding-left: 2%;
+    background: transparent;
+	
+}
+
+
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 35px;
+  height: 30px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.qualificationIcon{
+	font-size: 70%;
+    float: right;
+    color: gray;
+}

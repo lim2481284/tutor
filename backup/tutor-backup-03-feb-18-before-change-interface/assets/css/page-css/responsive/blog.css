@@ -1,0 +1,26 @@
+.blog-slider{
+	height:auto !important;
+	padding-bottom:0;
+}
+.nav-button{	
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+.small-button{
+	width:10%;
+}
+.blog-title{
+	text-align:center;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.blog-content{
+	margin-bottom:10%;
+}
+.blog-body,
+.blog-header{
+	margin:auto;
+	width:90%;
+}
+

@@ -1,0 +1,47 @@
+.verifyBtn{
+	border: 1px solid gray;
+    background: transparent;
+    color: gray;
+	padding:1%;	
+	outline:none;
+}
+.verifyBtn:hover{
+    background: gray;
+    color: white;	
+}
+
+#main-content h3{
+	margin-left:0;
+}
+
+.fa-check-circle{
+	color:green;
+}
+.fa-times-circle
+{
+	color:red;
+}
+.qualificationIcon{
+	cursor:pointer;
+	font-size:200%;
+	padding:3%;
+	padding-left:0;
+}
+.qualificationIcon:hover{
+	opacity:0.7;
+}
+.qualificationList{
+	border-bottom:1px solid gray;
+	margin-bottom:2%;
+}
+.panel-heading{
+	color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.titleLabel{
+	font-weight:bold;
+	padding-top: 2%;
+}
+
+

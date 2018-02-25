@@ -1,0 +1,42 @@
+
+#search-for-input{
+	width:80%;
+	margin-top: 10%;
+    margin-bottom: 10%;
+}
+.search-input{
+	margin-top: 10%;
+    margin-bottom: 10%;
+	text-align:center;
+	
+}
+.search-input input{
+	width:80%;
+}
+.search-button{
+	float:none;
+	margin-top:5%;
+	width:30%;
+}
+.result-pic{
+	width: 100%;
+    float: left;
+    text-align: center;
+}
+.result-pic img{
+	width:40%;
+}
+.result-profile{
+	width:100%;
+	border:none;
+	margin-bottom: 5%;
+    padding-bottom: 5%;
+	border-bottom:1px solid gray;
+}
+.result-detail{
+	width:100%;
+	margin-bottom:10%;
+	text-align:center;
+}
+
+	

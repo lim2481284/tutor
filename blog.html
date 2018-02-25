@@ -1,176 +1,89 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="">
-<!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tutorbook</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="css/blog.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- meta section -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- style for all page -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/page-css/responsive/main.css" media="screen and (max-width : 1024px)">
+	<link rel="stylesheet" href="assets/css/font-icon.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- style for this page -->
+	<link rel="stylesheet" href="assets/css/page-css/blog.css">
+	<link rel="stylesheet" href="assets/css/page-css/notFound.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/page-css/responsive/blog.css" media="screen and (max-width : 1024px)">
+
 </head>
 
 <body>
 
-<header id="header">  </header>
-
-<!-- about section -->
-<section id="intro" class="section intro no-padding ">
-  <div class="container-fluid">
-    <div class="row no-gutter" id='banner'>
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-12">
-              <div class="avatar"> <img src="images/blog_bg.png" alt="" class="img-responsive"> </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+	<!--Loader -->
+	<div class='loader'>
+		<div class='loaderContent'>
+			<div class='col-sm-12'>
+				<img src='assets/images/logo.png' class='logoGif'/>
+			</div>
+			<div class='col-sm-12'>
+				<img class='loadingImg' src='assets/images/loading_font.gif'/>
+			</div>
+		</div>
+	</div>
 
 
-<section id="intro" class="section intro no-padding blog-section">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-		  	<a href='blog-content.html'>
-            <div class="col-md-3">
-              <div class="avatar"> <img src="images/intro-img1.jpg" alt="" class="img-responsive"> </div>
-            </div>
-            <div class="col-md-9">
-                <div class="blog-list">
-                  <h1>We are Tutorbook</h1>
-                  <p>Most tuition agencies will select your tutor for you, based on who they think would be suitable. Tutor Hunt doesn't work this way: we believe  </p>
-                <div>
-            </div>
-			</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+	<!--header section-->
+	<header id="header">  </header>
+
+	<!-- blog section -->
+	<section id='bodyContent' class='fade-out'>
+		<section id="intro" class="section intro no-padding ">
+
+			<!-- Loader section -->
+		   <div class='loader'>
+				<img src='assets/images/loading_icon.gif'/>
+				<label class='loader-label'> Searching  ... </label>
+		   </div>
+
+		</section>
 
 
-
-<section id="intro" class="section intro no-padding blog-section">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-			<a href='blog-content.html'>
-            <div class="col-md-3">
-              <div class="avatar"> <img src="images/intro-img1.jpg" alt="" class="img-responsive"> </div>
-            </div>
-            <div class="col-md-9">
-                <div class="blog-list">
-                  <h1>We are Tutorbook</h1>
-                  <p>Most tuition agencies will select your tutor for you, based on who they think would be suitable. Tutor Hunt doesn't work this way: we believe  </p>
-                <div>
-            </div>
-          </li>
-		  </a>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+		<!-- blog content -->
+		<section class="wrapper">
+			<div class='blogSection'>
+			</div>
+		</section>
 
 
-<section id="intro" class="section intro no-padding blog-section">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-3">
-              <div class="avatar"> <img src="images/intro-img1.jpg" alt="" class="img-responsive"> </div>
-            </div>
-            <div class="col-md-9">
-                <div class="blog-list">
-                  <h1>We are Tutorbook</h1>
-                  <p>Most tuition agencies will select your tutor for you, based on who they think would be suitable. Tutor Hunt doesn't work this way: we believe  </p>
-                <div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+		<!-- Pagination section -->
+		<section class="paginationSection">
+		<ul class="pagination  pagination-lg">
+		</ul>
+		</section>
+	</section>
 
+	<!-- Footer section -->
+	<footer class="footer"></footer>
 
-<section id="intro" class="section intro no-padding blog-section">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-3">
-              <div class="avatar"> <img src="images/intro-img1.jpg" alt="" class="img-responsive"> </div>
-            </div>
-            <div class="col-md-9">
-                <div class="blog-list">
-                  <h1>We are Tutorbook</h1>
-                  <p>Most tuition agencies will select your tutor for you, based on who they think would be suitable. Tutor Hunt doesn't work this way: we believe  </p>
-                <div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+	<!--script for all page-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.all.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/plugin/cookie/src/js.cookie.js"></script>
+	<script src="assets/js/jquery.nicescroll.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/utility.js"></script>
+	<script src="assets/js/main-api-response.js"></script>
+	<script src="assets/js/main-api-action.js"></script>
+	<script src="assets/js/main-api.js"></script>
 
+	<!--script for this page-->
+	<script src="assets/js/page-js/blog.js"></script>
 
-<section >
-    <div class="row no-gutter row-margin-2">
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-          <button class='small-button'>1 </button>
-          <button class='small-button'>2 </button>
-          <button class='small-button'>3 </button>
-          <button class='small-button'>4 </button>
-          <button class='small-button'>5 </button>
-          <button class='small-button'>6 </button>
-          <button class='small-button'>7 </button>
-          <button class='small-button'>8 </button>
-          <button class='small-button'>9 </button>
-          <button class='small-button'>... </button>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-</section>
-
-
-
-<footer class="footer"></footer>
-<!-- Footer section -->
-<!-- JS FILES -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/retina.min.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/main.js"></script>
-<script src="js/load.js"></script>
 </body>
 </html>

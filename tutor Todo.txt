@@ -1,0 +1,54 @@
+Redesign
+	- admin
+		- loader
+	- user
+		- search
+			- redesign :  number of search result
+			- responsive
+			- code organize
+			- UX : point down after search
+		- blog
+			- responsive
+		- profile
+		- about
+				- responsive problem
+		- chat
+			- responsive 
+		- user profile
+		- blog content
+			- responsive
+		- 404 page
+
+Todo
+	- re-organize code
+	- page load function + role verify
+	- adjust file and folder  : use page load and seperate 3 user folder
+	- double check the system
+	- chat interface
+	- search blog function
+
+Bug fix
+	- blog panigation : check & test
+	- set profile
+	- edit or delete subject/ qualification stay on same page , ajax or just append
+
+Improvement
+	- loader
+	- improve interface
+		- improve UI
+		- change menu bar  ( optional )  x
+		- responsive problem
+		- add animation
+		- chat UI
+
+Later ( Not yet done )
+	- dispaly how many student purchase and view in the search result lst
+	- forgot password
+	- total view nad purchase
+	- my favourite
+	- purchase history
+	- purchase / transaction
+	- feedback
+	- chat
+	- seetting
+	- notificaion

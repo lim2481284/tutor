@@ -1,0 +1,77 @@
+
+/* 
+	Top menu bar styling 
+*/
+
+.filter{
+	max-height:100px;
+}	
+
+#header .logo{
+	margin-top:-6.5%;
+}
+
+.fixed > div.header-content.clearfix > a.logo{
+	margin-top:0 !important ;
+}
+
+#signin,
+#signup,
+#logout,
+#dashboard{
+	display: block;
+    font-size: 25px;    
+    text-align: center;
+    margin: auto;
+}
+
+#signin{
+    margin-top: 20%;
+}
+
+
+.active{
+	height:70vh;
+}
+
+/* 
+	Login/register form styling
+*/
+
+.popup{
+	width: 100% !important;
+    position: absolute;
+    border-radius: 0;
+    top: 2%;
+}
+
+.nav-tabs>.active{
+	height:auto;
+}
+
+#register-tab{
+	overflow:scroll !important;
+	padding-bottom: 20%;
+}
+
+.loader img{
+	margin-left:-10%;
+}
+.loader-label {
+    line-height: 35;
+}
+
+
+
+/* 
+	Banner styling 
+*/
+.flexslider{
+	height:100vw;
+}
+.flexslider .slides img{
+	height:100vw;
+	width:auto;
+	object-fit: cover;
+}
+

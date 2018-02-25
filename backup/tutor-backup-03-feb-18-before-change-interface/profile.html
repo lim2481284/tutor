@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+<head>
+
+	<!-- meta section -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- style for all page -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/page-css/responsive/main.css" media="screen and (max-width : 1024px)">
+	<link rel="stylesheet" href="assets/css/responsive.css">	
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/font-icon.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	
+	<!-- style for this page -->
+	<link rel="stylesheet" href="assets/css/page-css/profile.css">
+	<link rel="stylesheet" href="assets/css/page-css/notFound.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/page-css/responsive/profile.css" media="screen and (max-width : 1024px)">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	
+	
+</head>
+
+<body>
+
+	<!--header section-->
+	<header id="header">  </header>
+	<section id="intro" class="section intro no-padding">
+	  <div class="container-fluid">
+		<div class="row no-gutter" id='banner'>
+		  <div class="flexslider">
+			<ul class="slides">
+			  <li>
+				<div class="col-md-12">
+				  <div class="avatar"> <img src="assets/images/profile.png" alt="" class="img-responsive"> </div>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	
+	
+	<!-- profile section -->
+	<section id="intro" class="container section profile-section intro no-padding">
+		<div class="col-md-12">
+			<div class="col-md-3 profileMenuSection">
+				<div style='text-align:center'> <img style='width:100%' class='profilePicture'  src=''/> </div>
+				<div class="file-input-wrapper">
+				  <button class="btn-file-input">Change Profile Picture</button>
+				  <input type="file" name="file"  class='profileFileUpload' onchange="readURL(this);"/>
+				  <input type='hidden' class='profileHiddenImage'/>
+				</div>	
+				<div class='profileUsernameTitle profileUsername'>  </div>
+
+				<ul class='profileMenuList'>
+					<li class='active'> <span class="glyphicon glyphicon-user"></span> My profile</li>
+					<li class='firstTime' > <span class="glyphicon glyphicon-shopping-cart "></span> Purchase History </li>				
+					<li class='firstTime' > <span class="glyphicon glyphicon-heart"></span>  My favourite </li>
+				</ul>
+			</div>
+			<div class="col-md-1 "></div>
+			<div class="col-md-8 profileContentSection">					
+			</div>		
+		</div>
+	</section>
+
+
+
+	<!-- Footer section -->
+	<footer class="footer"></footer>
+
+	<!--script for all page -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.all.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<script src="assets/js/jquery.fancybox.pack.js"></script>	
+	<script src="assets/plugin/cookie/src/js.cookie.js"></script>
+	<script src="assets/js/page-js/profile.js"></script>			<!--script for this page -->
+	<script src="assets/js/jquery.nicescroll.js"></script>	
+	<script src="assets/js/main.js"></script>	
+	<script src="assets/js/utility.js"></script>
+	<script src="assets/js/main-api-response.js"></script>
+	<script src="assets/js/main-api-action.js"></script>	
+	<script src="assets/js/main-api.js"></script>	
+
+	
+	<!--script for this page -->
+	
+	<!--script for dynamic element -->
+	<script>
+	
+		//Update profile image 
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {			
+					$('.profileHiddenImage').val(reader.result);	
+					tutorAPI.updateProfileImage(reader.result);					
+					$('.profilePicture')
+						.attr('src', e.target.result)									
+				};
+				reader.readAsDataURL(input.files[0]);				
+				
+			}
+		}
+	</script>
+	
+</body>
+</html>

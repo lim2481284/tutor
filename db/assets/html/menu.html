@@ -1,0 +1,100 @@
+<!-- **********************************************************************************************************************************************************
+MAIN SIDEBAR MENU
+*********************************************************************************************************************************************************** -->
+<!--sidebar start-->
+<aside>
+  <div id="sidebar"  class="nav-collapse ">
+	  <!-- sidebar menu start-->
+	  <ul class="sidebar-menu" id="nav-accordion">
+	  
+		  <!--  profile picture and username
+		  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+		  <h5 class="centered menuUsername"></h5>
+		  -->
+			
+		  <li class="mt">
+			  <a class="index" href="index.html">
+				  <i class="fa fa-dashboard"></i>
+				  <span>Dashboard</span>
+			  </a>
+		  </li>
+		  <li class="sub-menu">
+			  <a class='web' href="javascript:;" >
+				  <i class="fa fa-user"></i>
+				  <span>Profile</span>
+			  </a>
+			  <ul class="sub">
+				  <li><a  class='web-nav' href="profile.html">My profile</a></li>
+				  <li><a class='web-nav'  href="user-student.html">Purchase history</a></li>
+				  <li><a class='web-nav'  href="user-student.html">My favourite </a></li>
+			  </ul>
+		  </li>
+
+		   <li class="sub-menu">
+			  <a class='search' href="search.html" >
+				  <i class="fa fa-search"></i>
+				  <span>Search </span>
+			  </a>
+
+		  </li>
+
+		   <li class="sub-menu">
+			  <a class='blog' href="blog.html" >
+				  <i class="fa fa-align-justify"></i>
+				  <span>Blog </span>
+			  </a>
+
+		  </li>
+		  
+		   <li class="sub-menu">
+			  <a class='settings' href="settings.html" >
+				  <i class="fa fa-gear"></i>
+				  <span>Settings </span>
+			  </a>
+
+		  </li>
+		  
+		  
+		   <li class="sub-menu">
+			  <a class='help' href="help.html" >
+				  <i class="fa fa-question"></i>
+				  <span>Help </span>
+			  </a>
+
+		  </li>
+		  		  
+	  </ul>
+	  <!-- sidebar menu end-->
+  </div>
+</aside>
+<!--sidebar end-->
+
+
+<script>
+$(function() {
+	var url = window.location.pathname.split("/").pop();
+	var path = url.split(".");
+	var path_name = path[0];	
+	if(path_name=="")
+	{
+		$('.index').addClass("active");
+	}
+	else 
+	{
+		
+		$('.'+path_name).addClass("active");
+	}
+
+    $('#nav-accordion').dcAccordion({
+        eventType: 'click',
+        autoClose: true,
+        saveState: true,
+        disableLink: true,
+        speed: 'slow',
+        showCount: false,
+        autoExpand: true,
+//        cookie: 'dcjq-accordion-1',
+        classExpand: 'dcjq-current-parent'
+    });
+});
+</script>

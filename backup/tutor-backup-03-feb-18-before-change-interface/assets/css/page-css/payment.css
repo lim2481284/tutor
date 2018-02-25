@@ -1,0 +1,29 @@
+
+/*Styling for Payment*/
+.payment-list{
+	margin-left: 10%;
+    width: 80%;
+	min-height:8%;
+}
+
+.payment-item{
+	width: 60%;
+    float: left;
+}
+
+.payment-amount{	
+	width: 40%;
+    float: left;
+	text-align: right;
+	
+}
+
+.payment-total{
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+	margin-left:10%;
+	width:80%;	
+	padding-top:4%;
+	padding-bottom:8%;
+}
+

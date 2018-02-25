@@ -1,0 +1,39 @@
+- re-organize code
+- design logo
+- adjust file and folder  : use page load and seperate 3 user folder
+- double check the system
+
+
+
+- chat interface
+
+
+-bug fix
+	- set profile
+	- edit or delete subject/ qualification stay on same page , ajax or just append
+
+
+- improvement
+	- loader
+	- improve interface
+		- improve UI
+		- change menu bar  ( optional )   -- later
+		- responsive problem
+		- add animation
+		- change bg picure to more user friendly  ( optioanl )
+		- chat UI
+
+
+
+
+Later ( Not yet done )
+	- dispaly how many student purchase and view in the search result lst
+	- forgot password
+	- total view nad purchase
+	- my favourite
+	- purchase history
+	- purchase / transaction
+	- feedback
+	- chat
+	- seetting
+	- notificaion

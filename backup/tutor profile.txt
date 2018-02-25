@@ -1,0 +1,176 @@
+	<h3>Profile</h3>  
+			  <div class="avatar profile-pic"> <img src="#" alt="" class="img-responsive profilePicture"> </div>
+			  <br><br>
+				<div class="file-input-wrapper">
+				  <button class="btn-file-input">Upload Image</button>
+				  <input type="file" name="file"  class='profileFileUpload' onchange="readURL(this);"/>
+				  <input type='hidden' class='profileHiddenImage'/>
+				</div>			
+          	<div class="row mt">			
+          		<div class="col-lg-12">
+                  <div class="form-panel">                  	  
+				  <h4 class="mb">Account Detail</h4>
+                      <form class="form-horizontal style-form" method="get">
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Username</label>
+                              <div class="col-sm-10">
+                                  <input id='profileUsername_tutor' type="text" class="form-control" disabled >
+                              </div>
+                          </div>   
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Email address</label>
+                              <div class="col-sm-10">
+								  <input  id='profileHiddenEmail' type='hidden' disabled />
+                                  <input  id='profileEmail'  type="text" class="form-control">
+                              </div>
+                          </div>  						 
+                      </form>
+                  </div>
+				<br>
+                  <div class="form-panel">                  	  
+				  <h4 class="mb">Account Status</h4>
+                      <form class="form-horizontal style-form" method="get">
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Account status</label>
+                              <div class="col-sm-10">
+                                  <label id='profileStatus'> </label>
+                              </div>
+                          </div>   
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Email status</label>
+                              <div class="col-sm-10">
+                                  <label id='profileEmailVerified'> </label>
+                              </div>
+                          </div>  	
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Last login</label>
+                              <div class="col-sm-10">
+                                  <label id='profileLastLogin'> </label>
+                              </div>
+                          </div>  	
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Total login</label>
+                              <div class="col-sm-10">
+                                  <label id='profileTotalLogin'> </label>
+                              </div>
+                          </div>  	
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Total violation</label>
+                              <div class="col-sm-10">
+                                  <label id='profileTotalViolation'> </label>
+                              </div>
+                          </div>  	
+					 					 					 					 
+                      </form>
+                  </div>
+				<br>				
+				<div class="form-panel">                  	  
+				  <h4 class="mb">Personal Detail</h4>
+                      <form class="form-horizontal style-form" method="get">
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">First name</label>
+                              <div class="col-sm-10">
+                                  <input id='profileFirstName' type="text" class="form-control">
+                              </div>
+                          </div>   
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Last name</label>
+                              <div class="col-sm-10">
+                                  <input id='profileLastName' type="text" class="form-control">
+                              </div>
+                          </div>  	
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Gender</label>
+                              <div class="col-sm-10">
+                                  <select id='profileGender' class="form-control"> 
+										<option value='m'>Male </option>
+										<option value='f'>Female </option>
+								  </select>
+                              </div>
+                          </div>  						  
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Address</label>
+                              <div class="col-sm-10">
+                                  <input id='profileAddress' type="text" class="form-control">
+                              </div>
+                          </div> 
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">City</label>
+                              <div class="col-sm-10">
+                                  <input id='profileCity' type="text" class="form-control">
+                              </div>
+                          </div> 
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Street</label>
+                              <div class="col-sm-10">
+                                  <input id='profileStreet' type="text" class="form-control">
+                              </div>
+                          </div> 						  
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">State</label>
+                              <div class="col-sm-10">
+									<select class='form-control' id='profileState'  >
+										<option value='jhr'>Johor</option>
+										<option value='kdh'>Kedah</option>
+										<option value='ktn'>Kelantan</option>
+										<option value='kul'>Kuala Lumpur</option>
+										<option value='lbn'>Labuan</option>
+										<option value='mlk'>Melaka</option>
+										<option value='nsn'>Negeri Sembilan</option>
+										<option value='phg'>Pahang</option>
+										<option value='png'>Penang</option>
+										<option value='prk'>Perak</option>
+										<option value='pls'>Perlis</option>
+										<option value='pjy'>Putrajaya</option>										
+										<option value='sgr'>Selangor</option>
+										<option value='sbh'>Sabah</option>
+										<option value='swk'>Sarawak</option>											
+										<option value='trg'>Terengganu</option>																	
+									</select>
+                              </div>
+                          </div> 
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Postcode</label>
+                              <div class="col-sm-10">
+                                  <input id='profilePostcode' type="text" class="form-control">
+                              </div>
+                          </div> 
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Phone number</label>
+                              <div class="col-sm-10">
+                                  <input id='profilePhone' type="text" class="form-control">
+                              </div>
+                          </div> 						  
+                      </form>
+                  </div>
+				<br>
+				<div class="form-panel">                  	  
+				  <h4 class="mb">Profile Detail</h4>
+                      <form class="form-horizontal style-form" method="get">
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Description about myself</label>
+                              <div class="col-sm-10">
+                                  <textarea type="text" id="profileDescription" class="form-control"  rows="4" > </textarea>
+                              </div>
+                          </div>   
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Teaching Subject</label>
+                              <div class="col-sm-10">
+									<div class='teachingSubjectSection'> </div>
+									 <button type="button" class="btn btn-info addSubject" >Add Subject</button>	
+                              </div>
+                          </div>						 
+						  <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Qualification</label>
+                              <div class="col-sm-10">
+									<div class='qualificationSection'> </div>
+									 <button type="button" class="btn btn-info addQualification" >Add qualification</button>	
+                              </div>
+                          </div>						  
+                      </form>
+                  </div>	
+				  <br><br>
+				  <button style='margin-left:1%' type="button" id="profile-update-button" class="btn btn-primary update-header">Save changes</button>
+				  <button type="button" class="btn profileChangePassword" style='margin-left:2%'>Change password</button>	
+				  <br><br>					
+          	</div>          

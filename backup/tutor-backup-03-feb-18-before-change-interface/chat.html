@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Chat</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/page-css/chat.css">
+    <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/chat.js" type="text/javascript"></script>
+    <script>
+        Chat.onReceived((sender, data)=>console.log(data));
+    </script>
+</head>
+<body>
+	<div class="col-sm-3 col-sm-offset-4 frame">
+		<ul></ul>
+		<div>
+			<div class="msj-rta macro" style="margin:auto">                        
+				<div class="text text-r" style="background:whitesmoke !important">
+					<input class="mytext" placeholder="Type a message"/>
+				</div> 
+			</div>
+		</div>
+	</div>        	
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="/assets/js/chat.js" type="text/javascript"></script>
+<script src="assets/js/page-js/chat.js"></script>	
+
+</html>

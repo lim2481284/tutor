@@ -1,0 +1,40 @@
+.profile-icon{
+	width:100%;
+	margin-bottom:10%;	
+	margin-top:5%;
+}
+
+
+.nav-tabs>li{
+	width:25%;
+	max-width:25%;
+	font-size:60%;
+	
+}
+.nav>li>a{
+	display:block;
+}
+
+
+.profileContentSection{
+	border-top:1px solid gray;
+	padding-top:15%;
+	
+}
+
+.tab-content{
+	width:100%;
+	display:inline-block;
+	height:auto;
+}
+
+.tab-content:after{
+	overflow: auto;
+    content: "";
+    display:inline-block;
+	height:auto;
+}
+
+.active{
+	height:auto;
+}

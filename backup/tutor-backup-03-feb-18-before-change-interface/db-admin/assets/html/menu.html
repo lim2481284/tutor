@@ -1,0 +1,93 @@
+<!-- **********************************************************************************************************************************************************
+MAIN SIDEBAR MENU
+*********************************************************************************************************************************************************** -->
+<!--sidebar start-->
+<aside>
+  <div id="sidebar"  class="nav-collapse ">
+	  <!-- sidebar menu start-->
+	  <ul class="sidebar-menu" id="nav-accordion">
+	  
+		  <!-- profile pic and username 
+		  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+		  <h5 class="centered">Admin</h5>
+		  -->
+			
+		  <li class="mt">
+			  <a class="index" href="index.html">
+				  <i class="fa fa-dashboard"></i>
+				  <span>Dashboard</span>
+			  </a>
+		  </li>
+
+		  
+		  <li class="sub-menu">
+			  <a class='report'  href="report.html" >
+				  <i class="fa fa-desktop"></i>
+				  <span>Report Summary</span>
+			  </a>
+
+		  </li>
+		  
+		  <li class="sub-menu">
+			  <a class='web' href="javascript:;" >
+				  <i class="fa fa-cogs"></i>
+				  <span>User Management</span>
+			  </a>
+			  <ul class="sub">
+				  <li><a  class='web-nav' href="user-tutor.html">Tutor</a></li>
+				  <li><a class='web-nav'  href="user-student.html">Student</a></li>
+			  </ul>
+		  </li>
+
+		  
+		  <li class="sub-menu">
+			  <a class='web' href="javascript:;" >
+				  <i class="fa fa-cogs"></i>
+				  <span>Website Management</span>
+			  </a>
+			  <ul class="sub">
+				  <li><a  class='web-nav' href="contact.html">Contact</a></li>
+				  <li><a class='web-nav'  href="about.html">About</a></li>
+				  <li><a  class='web-nav' href="blog.html">Blog</a></li>
+				  <li><a  class='web-nav' href="other.html">Other</a></li>
+			  </ul>
+		  </li>
+	  </ul>
+	  <!-- sidebar menu end-->
+  </div>
+</aside>
+<!--sidebar end-->
+
+
+
+<script>
+$(function() {
+	var url = window.location.pathname.split("/").pop();
+	var path = url.split(".");
+	var path_name = path[0];
+	if(path_name=="")
+	{
+		$('.index').addClass("active");
+	}
+	else if(path_name=="about" || path_name=="contact" || path_name =="blog")
+	{
+		$('.web').addClass("active");
+	}
+	else 
+	{
+		$('.'+path_name).addClass("active");
+	}
+
+    $('#nav-accordion').dcAccordion({
+        eventType: 'click',
+        autoClose: true,
+        saveState: true,
+        disableLink: true,
+        speed: 'slow',
+        showCount: false,
+        autoExpand: true,
+//        cookie: 'dcjq-accordion-1',
+        classExpand: 'dcjq-current-parent'
+    });
+});
+</script>

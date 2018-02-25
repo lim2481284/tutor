@@ -1,0 +1,331 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+<head>
+
+	<!-- meta section -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- style for all page -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">	
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/font-icon.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<!-- style for this page -->
+	<link rel="stylesheet" href="assets/css/page-css/profile.css">
+	
+</head>
+
+<body>
+
+	<!--header section-->
+	<header id="header">  </header>
+	<section id="intro" class="section intro no-padding">
+	  <div class="container-fluid">
+		<div class="row no-gutter" id='banner'>
+		  <div class="flexslider">
+			<ul class="slides">
+			  <li>
+				<div class="col-md-12">
+				  <div class="avatar"> <img src="assets/images/profile.png" alt="" class="img-responsive"> </div>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	<!-- profile section -->
+	<section id="intro" class="section intro no-padding">
+	   <div class="container profile-header-section">
+			<div class='profile-menu-list'>
+				 <div class='profile-icon profile-edit'>
+					<div class='profile-icon-img'>
+						 <span class="glyphicon glyphicon-pencil"></span>
+					</div>
+					<div class='profile-icon-des'>
+						Edit
+					</div>
+				 </div>
+				 <div class='profile-icon'>
+					<div class='profile-icon-img'>
+						 <span class="glyphicon glyphicon-signal"></span>
+					</div>
+					<div class='profile-icon-des'>
+						Purchase History
+					</div>
+				 </div>
+				 <div class='profile-icon'>
+					<div class='profile-icon-img'>
+						 <span class="glyphicon glyphicon-search"></span>
+					</div>
+					<div class='profile-icon-des'>
+						Who's found me 
+					</div>
+				 </div>
+				 <div class='profile-icon'>
+					<div class='profile-icon-img'>
+						 <span class="glyphicon glyphicon-heart"></span>
+					</div>
+					<div class='profile-icon-des'>
+						My favourite
+					</div>
+				 </div>
+				 <div class='profile-icon profileChangePassword'>
+					<div class='profile-icon-img'>
+						 <span class="glyphicon glyphicon-lock"></span>
+					</div>
+					<div class='profile-icon-des'>
+						Change password
+					</div>
+				 </div>				 
+			</div>
+	  </div> 
+	  <div class="container profile-basic-section">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Basic
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+			<div class="col-md-3">
+			  <div class="avatar profile-pic"> <img src="assets/images/team-pic.png" alt="" class="img-responsive"> </div>
+			</div>
+			<div class="col-md-8">
+			  <div class='profile-basic'>	    
+				<h1><label id='profileUsername'></label> </h1>				
+				 <div class='profile-student-row'>
+					<div class='profile-student-left'>First Name </div>
+					<div class='profile-student-right'><input class='profile-input' id='profileFirstName' type='text' disabled /></div>
+				</div>
+				 <div class='profile-student-row'>
+					<div class='profile-student-left'>Last Name </div>
+					<div class='profile-student-right'><input class='profile-input' id='profileLastName' type='text' disabled /> </div>
+				</div>					
+				 <div class='profile-student-row'>
+					<div class='profile-student-left'>Gender</div>
+					<div class='profile-student-right'><select class='profile-input' id='profileGender' disabled ><option value='m'>male</option><option value='f'>female</option></select> </div>
+				</div>
+				 <div class='profile-student-row'>
+					<div class='profile-student-left'>Email </div>
+					<div class='profile-student-right'> <input class='profile-input' id='profileEmail' type='text' disabled /></div>
+				</div>
+				 <div class='profile-student-row'>
+					<div class='profile-student-left'>Phone </div>
+					<div class='profile-student-right'> <input class='profile-input' id='profilePhone' type='text' disabled /> </div>
+				</div>		
+	
+			  </div>
+			</div>
+		 </div>        
+	  </div>
+	  
+	  <div class="container profile-profile-section profile-profile-section  ">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Profile
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+				<div style='padding-left:0;' class="col-md-10">
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Address </div>
+						<div class='profile-student-profile-right'><label id='profileStatus'> </label></div>
+					</div>	
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Street  </div>
+						<div class='profile-student-profile-right'><label id='profileEmailVerified'> </label></div>
+					</div>							
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>City </div>
+						<div class='profile-student-profile-right'> <label id='profileLastLogin'> </label> </div>
+					</div>
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>State  </div>
+						<div class='profile-student-profile-right'><label id='profileTotalLogin'> </label></div>
+					</div>
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Postcode   </div>
+						<div class='profile-student-profile-right'><label id='profileTotalViolation'> </label></div>
+					</div>		
+					
+				</div>
+			<div class="col-md-1"></div>
+		 </div>        
+	  </div>	
+	  
+	  <div class="container profile-profile-section profile-status-section  ">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Status
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+				<div style='padding-left:0;' class="col-md-10">
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Account status </div>
+						<div class='profile-student-profile-right'><label id='profileStatus'> </label></div>
+					</div>	
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Email Status </div>
+						<div class='profile-student-profile-right'><label id='profileEmailVerified'> </label></div>
+					</div>							
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Last login </div>
+						<div class='profile-student-profile-right'> <label id='profileLastLogin'> </label> </div>
+					</div>
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Total login </div>
+						<div class='profile-student-profile-right'><label id='profileTotalLogin'> </label></div>
+					</div>
+					<div class='profile-student-row'>
+						<div class='profile-student-profile-left'>Total Violation  </div>
+						<div class='profile-student-profile-right'><label id='profileTotalViolation'> </label></div>
+					</div>		
+					
+				</div>
+			<div class="col-md-1"></div>
+		 </div>        
+	  </div>	  
+	   <div class="container profile-profile-section">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Qualification
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+			<div style='padding-left:0;' class="col-md-10">
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'>University </div>
+					<div class='profile-student-profile-right'> <input class='profile-input' id='profileUniversity' type='text' disabled /> </div>
+				</div>
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'>Polytechnic </div>
+					<div class='profile-student-profile-right'><input class='profile-input' id='profilePolytechnic' type='text' disabled /></div>
+				</div>
+			</div>
+			 <div class="col-md-1"></div>
+		</div>
+	   </div>        
+		<div class="container profile-profile-section">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Teaching Subject
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+			<div style='padding-left:0;' class="col-md-10">
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'>Subject 1  </div>
+					<div class='profile-student-profile-right'>	</div>
+				</div>
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'>Subject 2 </div>
+					<div class='profile-student-profile-right'>	</div>
+				</div>
+			</div>
+			 <div class="col-md-1"></div>
+		</div>
+	   </div>   
+	   <div class="container profile-profile-section">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Experience
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+			<div style='padding-left:0;' class="col-md-10">
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'> </div>					
+				</div>
+			</div>
+			 <div class="col-md-1"></div>
+		</div>
+	   </div>  
+	   <div class="container profile-profile-section">
+		<div class='profile-head-section'> 
+			<div class="col-md-1"></div>	
+			Schedule
+		</div>
+		<div class='profile-body-section'> 
+			<div class="col-md-1"></div>	
+			<div style='padding-left:0;' class="col-md-10">
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'>Monday </div>
+					<div class='profile-student-profile-right'> 8pm - 10pm</div>
+				</div>
+				<div class='profile-student-row'>
+					<div class='profile-student-profile-left'> Friday</div>
+					<div class='profile-student-profile-right'> 1pm - 3pm</div>
+				</div>
+			</div>
+			 <div class="col-md-1"></div>
+		</div>
+	   </div>   
+	   <div  style=' padding:0; ' class="container profile-update-section">
+			<div class='update-header'><button id='profile-update-button' ><h3> Save </h3></button> </div>
+			<div class='cancel-update-header'><button id='profile-update-button' ><h3> Cancel </h3></button> </div>
+	   </div>
+	   <div  style=' padding:0; ' class="container profile-review-section">
+			<div class='review-header'><h3> Review </h3> </div>
+			<div class='review-comment'>
+				<div class='comment-pic'>
+					<img src='assets/images/team-pic.png'/>
+				</div>
+				<div class='comment-body'>
+					<div class='comment-username'>
+						Chew Jing Yao
+					</div>
+					<div class='comment-detail'>
+						Comment 
+					</div>
+				</div>
+			</div>
+		   <div class='review-comment'>
+				<div class='comment-pic'>
+					<img src='assets/images/team-pic.png'/>
+				</div>
+				<div class='comment-body'>
+					<div class='comment-username'>
+						Chew Jing Yao
+					</div>
+					<div class='comment-detail'>
+						Comment 
+					</div>
+				</div>
+			</div> 
+	  </div> 
+	</section>
+
+
+
+	<!-- Footer section -->
+	<footer class="footer"></footer>
+
+	<!--script for all page-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<script src="assets/js/jquery.fancybox.pack.js"></script>	
+	<script src="assets/plugin/cookie/src/js.cookie.js"></script>
+	<script src="assets/js/main.js"></script>	
+	<script src="assets/js/utility.js"></script>
+	<script src="assets/js/main-api-response.js"></script>
+	<script src="assets/js/main-api-action.js"></script>	
+	<script src="assets/js/main-api.js"></script>	
+
+	<!--script for this page-->
+	<script src="assets/js/page-js/profile.js"></script>	
+	<script>
+
+	</script>
+</body>
+</html>

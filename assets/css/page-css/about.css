@@ -1,0 +1,13 @@
+.intro{
+  background: white;
+}
+#intro{
+  margin-top:10%;
+}
+h1{
+  color:#44444 !important;
+  opacity: 0.9;
+}
+.slides{
+  width: 90%;
+}

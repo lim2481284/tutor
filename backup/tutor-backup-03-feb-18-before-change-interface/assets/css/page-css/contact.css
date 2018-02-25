@@ -1,0 +1,28 @@
+
+
+#container_1{
+  background-color :#e9eaed;
+}
+
+h2{
+  text-align: center
+}
+
+#contact_title{
+  color:black;
+  font-weight: bold;
+}
+input{
+	font-size: inherit;
+}
+
+.contact_p > p{
+  color:#6c7279;
+  text-align: center;
+}
+
+.contact_icon > img{
+  display:block;
+  margin:auto;
+
+}

@@ -1,0 +1,42 @@
+
+
+.btn-file-input{
+	cursor:pointer;
+}
+
+
+.profileFileUpload{
+	cursor:pointer;
+}
+
+
+.file-input-wrapper {
+	margin:auto;
+	width: 200px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+.file-input-wrapper > input[type="file"] {
+	font-size: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+
+}
+.file-input-wrapper > .btn-file-input {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+    background: #3DBAD9;
+    color: white;
+    outline: none;
+    border: none;	
+}
+
+.profilePicture{
+	margin:auto;
+	max-height:200px;
+	max-width:200px;
+}

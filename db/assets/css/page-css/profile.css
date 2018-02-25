@@ -1,0 +1,201 @@
+.titleLabel{
+	font-weight:bold;
+}
+#personal{
+	    word-wrap: break-word;
+}
+
+
+.qualificationList,
+.subjectList{
+	width:100%;
+	border-bottom:1px solid lightgray;
+	margin-bottom:3%;
+	padding-bottom:3%;
+}
+.qualificationBtn{
+	border: 1px solid gray;
+    background: transparent;
+    color: gray;	
+}
+.qualificationBtn:hover{
+    background: gray;
+    color: white;	
+}
+
+.swal-label{
+	text-align:left !important;
+	float:left;
+	font-size:80%;
+}
+
+p{
+	    margin: 10px 0 0px;
+}
+
+.btn-file-input{
+	cursor:pointer;
+}
+
+
+.profileFileUpload{
+	cursor:pointer;
+}
+
+
+.file-input-wrapper {
+	margin:auto;
+	width: 200px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+.file-input-wrapper > input[type="file"] {
+	font-size: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+
+}
+.file-input-wrapper > .btn-file-input {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+    background: #3DBAD9;
+    color: white;
+    outline: none;
+    border: none;	
+}
+
+.profilePicture{
+	margin:auto;
+	max-height:200px;
+	max-width:200px;
+}
+
+
+.profile-section{
+	margin-top:5%;
+	margin-bottom:10%;
+}
+
+.profileMenuList{
+	 text-align: center;
+}
+ul.profileMenuList li
+{
+	padding: 5%;
+    cursor: pointer;
+    margin-top: 5%;    
+    border-radius: 30px;
+}
+ul.profileMenuList li span
+{
+	width:20%;
+	float:left;
+}
+.profileContentSection{
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
+.tab-content{	
+	background: white;
+    margin-top:0%;
+	padding: 5%;
+    padding-top: 10%;
+    border: 1px solid lightgray;
+    border-top: 0;   
+	display:table;
+	
+}
+.profileMenuList li:hover
+{
+	opacity:0.5;
+}
+.profileMenuList .active{	
+	color:#3DBAD9 !important;
+	height	:auto;
+}
+
+.profileUsernameTitle{
+	text-align:center;
+	font-size:130%;		
+	font-weight:600;
+	padding-top:10%;
+	padding-bottom:5%;
+	border-bottom:1px solid gray;
+}
+.nav-tabs>li{
+	max-width: 25%;
+	font-size: 100%;	
+    font-weight: lighter;
+	text-transform:uppercase;
+}
+
+.form-group{
+	border-bottom: 1px solid #eff2f7;
+    padding-bottom: 5%;
+    margin-bottom: 15px;
+}
+
+
+.col-no-padding{
+	padding-left:0;
+	
+}
+
+.btn-file-input{
+	cursor:pointer;
+}
+
+
+.btn_custom{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	margin-left:20px;
+}
+.btn_custom_transparent{
+	background: transparent;
+    color: #5bc0de;
+	border: none;
+	
+}
+.btn_custom_transparent:hover{
+	background: transparent;
+    color: #5bc0de;
+	border: none;
+	opacity:0.5;
+}
+.btn_custom_transparent:focus{
+	background: transparent;
+    color: #5bc0de;
+	border: none;
+	outline:none;
+	opacity:0.5;
+}
+.subjectBtn{
+	border: 1px solid gray;
+    background: transparent;
+    color: gray;	
+}
+.subjectBtn:hover{
+    background: gray;
+    color: white;	
+}
